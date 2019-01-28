@@ -1,0 +1,58 @@
+.fig-text {
+  margin: 75px 0;
+  a {
+    color: $red;
+  }
+}
+
+.figurines {
+  margin-bottom: 75px;
+  .categ {
+    .categ-fig {
+      display: flex;
+      justify-content: start;
+      padding: 5px;
+      .figurine {
+        position: relative;
+        flex: 0 0 20%;
+        height: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: 5px;
+        cursor: pointer;
+        transition: all .3s ease;
+        @media (max-width: $screen-sm-max) {
+          flex: 0 0 50%;
+        }
+        &:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 13px 14px -6px rgba(153, 153, 153, .75);
+          cursor: pointer;
+        }
+        h4 {
+          background-color: white;
+          text-align: center;
+          margin-top: 0;
+          height: 25px;
+          line-height: 25px;
+        }
+        .price {
+          background-color: #111;
+          color: white;
+          display: inline-block;
+          padding: 5px;
+          border-radius: 5px 0 0 0;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+        }
+        .fig-size {
+          position: absolute;
+          bottom: 10px;
+          left: 10px
+        }
+      }
+    }
+  }
+}

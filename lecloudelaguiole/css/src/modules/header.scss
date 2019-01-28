@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url('fonts/HelveticaNeue.otf');
+}
+
+body {
+  font-family: Helvetica Neue, sans-serif;
+  font-size: 1.4rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $red;
+}
+
+header {
+  position: relative;
+  border-bottom: 3px solid #EEE;
+  .navbar {
+    margin-bottom: 0;
+    background-color: transparent;
+    border: none;
+    .container-fluid {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  .navbar-header {
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .navbar-brand {
+      width: 100%;
+      text-align: center;
+      margin-left: 0 !important;
+      color: black;
+      height: 100px;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    @media (max-width: $screen-md-max) {
+      margin-left: 0 !important;
+    }
+  }
+  #top-menu {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    @media (max-width: $screen-xs-max) {
+      display: block;
+    }
+    a {
+      color: #181818;
+      &:hover {
+        color: $red;
+      }
+    }
+    @media (max-width: $screen-xs-max) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

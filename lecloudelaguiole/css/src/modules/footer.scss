@@ -1,0 +1,12 @@
+footer {
+  background-color: #111;
+  color: white;
+  padding: 10px 0;
+  a {
+    color: $red;
+    &:hover {
+      text-decoration: underline;
+      color: $red;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.lightbox {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(17, 17, 17, 0.8);
+  display: flex;
+  align-items: center;
+  z-index: 9999999;
+
+  .lightbox-content {
+    padding: 0;
+    height: 80vh;
+    background-color: white;
+    overflow: auto;
+    @media (max-width: $screen-md-max) {
+      width: 80%;
+    }
+    .limage {
+      height: 100%;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      border-right: 2px solid #EEE;
+    }
+  }
+}

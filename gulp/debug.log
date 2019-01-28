@@ -1,0 +1,6 @@
+[0801/095336.350:ERROR:scoped_process_suspend.cc(31)] NtSuspendProcess: Tentative d’accès à un processus en cours d’arrêt.  (0xc000010a)
+[0801/095336.374:ERROR:process_info.cc(117)] ReadProcessMemory bool __cdecl crashpad::`anonymous-namespace'::ReadStruct<struct crashpad::process_types::PEB<struct crashpad::process_types::internal::Traits64>>(void *,unsigned __int64,struct crashpad::process_types::PEB<struct crashpad::process_types::internal::Traits64> *): Seule une partie d’une requête ReadProcessMemory ou WriteProcessMemory a été effectuée. (0x12B)
+[0801/095336.392:ERROR:process_info.cc(565)] ReadProcessData failed
+[0801/095336.392:ERROR:process_reader_win.cc(242)] ReadMemory at 0x7ff9b4b119d0 of 12 bytes failed: Seule une partie d’une requête ReadProcessMemory ou WriteProcessMemory a été effectuée. (0x12B)
+[0801/095336.393:WARNING:process_snapshot_win.cc(71)] ReadMemory ExceptionInformation failed
+[0801/095336.393:WARNING:crash_report_exception_handler.cc(62)] ProcessSnapshotWin::Initialize failed
